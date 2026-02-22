@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ワクワクじゃんけん！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>じゃんけん……ぽん！</h1>
+        
+        <div class="display">
+            <div class="player-side">
+                <p>きみ</p>
+                <div id="player-hand" class="hand">？</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="cpu-side">
+                <p>あいて</p>
+                <div id="cpu-hand" class="hand">？</div>
+            </div>
+        </div>
+
+        <h2 id="result-message">なにをだす？</h2>
+
+        <div class="choices">
+            <button onclick="playGame('✊')">✊ グー</button>
+            <button onclick="playGame('✌️')">✌️ チョキ</button>
+            <button onclick="playGame('✋')">✋ パー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
